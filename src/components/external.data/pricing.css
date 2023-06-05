@@ -1,0 +1,18 @@
+.tab-content {
+    position: absolute;
+    display: flex;
+    background-color: white;
+    border: solid 1px;
+    border-radius: 8px;
+    z-index: 3;
+    bottom: 15em;
+    left: 1em;
+}
+
+.content {
+    position: relative;
+    background-color: white;
+    display: flex;
+    text-align: center;
+    z-index: 4;
+}

@@ -1,0 +1,8 @@
+{
+  "plugins": ["import"],
+  "extends": ["@appenin/eslint-config"],
+  "rules": {
+    "no-console": "off",
+    "camelcase": "off"
+  }
+}

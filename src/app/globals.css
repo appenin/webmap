@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+    font-size: 14px;
+    -webkit-font-smoothing: antialiased;
+    padding: 0;
+    margin: 0;
+    font-family: Inter, arial, sans-serif;
+    color: var(--color-secondary);
+}
+
+html, body, #__next {
+    /* overflow: auto; */
+    /* height: 100%; */
+}
+
+body {
+    position: relative;
+    width: 100vw;
+    background-color: var(--layout-bg-color, #ffffff);
+}
+
+#__next {
+    scroll-behavior: smooth;
+}
+
+a[type='button'] {
+    appearance: none;
+}
+
+/*
+ * This will overload intercom's iframe CSS.
+ * Be sure to have a z-index lower than the RGPD banner!
+ */
+div.intercom-lightweight-app,
+div.intercom-lightweight-app .intercom-lightweight-app-launcher {
+    z-index: 3;
+}
+
+@media screen and (max-width: 640px) {
+    div.intercom-lightweight-app .intercom-lightweight-app-launcher,
+    .intercom-namespace iframe.intercom-launcher-frame {
+        bottom: 80px;
+    }
+}
